@@ -1,0 +1,42 @@
+html {
+  text-align: center;
+}
+button {
+  display: inline-block;
+  background-color: #1a0c6e;
+  border-radius: 10vw;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+button span::marker {
+  content: '\00bb';
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #07030c;
+}
+button:hover span {
+  padding-right: 25px;
+}
+button:hover span {
+  opacity: 1;
+  right: 0;
+}
+
